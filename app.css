@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #1b0044;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header{ 
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+}
+
+.title h1{
+    font-family: Roboto, "Helvetica Neue", Arial;
+    margin: 0;
+}
+
+.menu-button svg{
+    fill: hsl(0, 0%, 100%);
+    width: 2rem;
+}
+
+main{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 4fr;
+    padding: 0 5%;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-header{ 
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+}
+
+.table-header svg{
+    fill: hsl(240, 50%, 40%);
+    width: 1.5rem;
+}
+
+.table-register-header-buttons{
+    display: flex;
+}
+
+.table-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    min-height: 70vh;
+}
+
+.table-register-header{
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.2rem;
+}
+
+.table-register-header-buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.edit-button svg{
+    cursor: pointer;
+    fill: hsl(240, 50%, 40%);
+    width: 1.5rem
+}
+
+.delete-button svg{
+    cursor: pointer;
+    fill: hsl(240, 50%, 40%);
+    width: 1.5rem
+}
+
+.edit-button:hover svg, .delete-button:hover svg{
+    fill: hsl(271, 100%, 66%);
+}
+
+.table-register-body{
+    background-color: hsl(0, 0%, 3%);
+    padding: 0.5rem;
+}
+
+.table-register-body ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-register-body ul li span::after {
+    padding-right: .25rem;
+    content: ":";
+}
+
+.table-footer{
+    display: flex;
+    gap: 1rem;
+}
+
+.table-footer-info span{
+    font-family: Roboto, "Helvetica Neue", Arial;
+}
+
+.table-footer-pagination{
+    display: flex;
+    font-family: Roboto, "Helvetica Neue", Arial;
+    gap: 0.5rem;
+}
+
+.table-footer-pagination-button{
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-header{
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.form-header-tabs ul{
+    display: flex;
+    height: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-header-tabs ul li{
+    align-items: center;
+    background-color: hsl(240, 50%, 40%);
+    display: flex;
+    font-family: Roboto, "Helvetica Neue", Arial;
+    height: 100%;
+    padding: 0 0.5rem;
+}
+
+.form-header-tabs ul li.active{
+    background-color:hsl(271, 100%, 66%);
+}
+
+.form-header-buttons{
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.2rem;
+}
+
+.form-header-buttons svg{
+    width: 1.8rem;
+}
+
+.form-body form{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-element-label label{
+    font-family: Roboto, "Helvetica Neue", Arial;
+    font-size: 0.9rem;
+}
+
+.form-element-input input{
+    font-family: Roboto, "Helvetica Neue", Arial;
+    height: 1.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.form-element-input select{
+    height: 1.5rem;
+    width: 100%;
+}
